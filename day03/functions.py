@@ -122,6 +122,7 @@ print(fun(x))
 print(fun(y)) """
 
 
+#Here z value is 17 only when function is called otherwise it is 10 as declared outside function which acts as global varaible
 z=10
 def func():
     z = 17
@@ -129,6 +130,45 @@ def func():
 
 func()
 print(z)
+
+
+#DOCSTRING
+
+def area(r):
+    """Return's the area of the circle with the given radius"""
+
+    return 3.14159 * r * r
+
+print(area(7))
+
+
+#Calling a function from another function
+
+def square(n):
+    """Returns the square of the given number"""
+    return n * n
+
+def sum_of_squares(a, b):
+    """Returns the sum of the given two numbers"""
+
+    return square(a)+square(b)
+
+
+print(sum_of_squares(3, 4))
+
+
+
+#running a code only when I run this file directly, not when another file imports it
+
+def add(a, b):
+    """Returns the sum of given numbers"""
+    return a + b
+
+if __name__ == "_main_":
+    print(add(2,3))
+
+    
+
 
 
 
