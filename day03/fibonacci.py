@@ -1,6 +1,6 @@
 #My approach and the bug it caused was for n = 0 it prints nothing
 
-def fibonacci(n):
+"""def fibonacci(n):
 
    a=0
    b=1
@@ -11,7 +11,7 @@ def fibonacci(n):
    return b
         
 n = int(input("Enter upto where the fibonacci sequence needs to be printed:"))
-print(fibonacci(n))
+print(fibonacci(n))"""
 
 
 #Corrected approach
@@ -25,6 +25,8 @@ def fibonacci(n):
     a,b = b, a+b
 
    return a
+
+if __name__ == "__main__":
         
-n = int(input("Enter upto where the fibonacci sequence needs to be printed:"))
-print(fibonacci(n))
+   n = int(input("Enter upto where the fibonacci sequence needs to be printed:"))
+   print(fibonacci(n))

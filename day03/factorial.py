@@ -3,20 +3,20 @@ def factorial(n):
     """Returns the factorial of the given number"""
 
     fact = 1
-    if n>0:
+    
 
-       for i in range(1,n+1):
-            fact = fact * i
+    for i in range(1,n+1):
+        fact = fact * i
 
-       return fact
+    return fact
 
-    else:
-        print("Enter a number greater than 0")
+   
         
 
+if __name__ == "__main__":
 
-b = int(input("enter a number to find its factorial:"))
-print(factorial(b))
+    b = int(input("enter a number to find its factorial:"))
+    print(factorial(b))
 
 
 
